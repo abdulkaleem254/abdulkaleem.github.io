@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kaleem</title>
+	<!--<meta name="viewport" content="width-device-width" intial-scale="1.0"><-->
+	<style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
+		body{
+			height: 100%;
+			width: 99%;
+			background-image: url(rgg.jpg);
+			background-size: cover;	
+			color: white;	}
+
+			/*home*/
+		button{
+			color: white;
+			font-size: 100%;
+			margin-left: 30%;	
+			background-color: black;
+			border: none;			
+		}
+		.bt .bb{
+			text-decoration: none;
+			background-color: transparent;
+			color: white;
+			font-size: 23px;
+			margin-left: 0px;
+			border: none;			
+		}
+		#p{
+			margin-left: 8%;
+			margin-top: 3%;
+			font-size: 350%;
+			color: white;
+		}
+		#d{
+			margin-left: 8%;
+			margin-top: -3%;
+			font-size: 350%;
+			color: white;
+
+
+		}
+		span{
+			color: #007fff;
+			font-family: cursive;
+
+		}
+		h2{
+			margin-left: 100px;
+		}
+		#c{
+			font-family: cursive;
+			margin-left: 8%;
+			margin-top: -3%;
+			font-size: 350%;
+			color: white
+		}
+		.bt li {
+			display: inline-block;
+			background-color: #007fff;
+			text-align: center;
+			padding: 5px;
+			color: white;
+			width: 120px;
+			font-size: 25px;
+			height: 30px;
+			border-radius: 15px;
+			margin-left: 140px;
+			transition-duration: 0.6s;
+		}
+
+		/*this is home buttons*/
+		/*button:hover{
+			/*color: #000;
+			border-bottom: 2px solid white;
+			font-size: 27px;
+			cursor: pointer;
+			border-radius: 4px;
+			/*background-color: #fff;
+			transition-duration: 0.5s;
+
+		}*/
+
+		.bb:hover{
+			text-align: center;
+			cursor: default;
+			background-color:#007fff;
+			width: 120px;
+			height: 35px;
+			transition-duration: 1s;
+			border-bottom: none;
+			border-radius: 100%;
+		}
+		.imgg img{
+			border: 30px solid white;
+			width: 25%;
+			height: 55%;
+			margin-top: -27%;
+			margin-left: 55%;
+			margin-right: 10%;
+			float: right;
+			border-radius: 50%;
+			transition-duration: 0.8s;
+			background-repeat: no-repeat;
+			position: absolute;
+			
+		}
+		.imgg img:hover{
+			border: 2px solid #fff;
+			border-radius: 100px;
+			width: 30%;
+			height: 65%;
+			border-radius: 100%;
+			transition-duration: 0.8s;
+		}
+		/*.active a{
+			border-bottom: 2px solid green;
+		}*/
+		.list li button{
+			font-size: 140%;
+			margin-top: 1%;
+			margin-left: 50%;
+			position: fixed;
+			margin-right: 0%;
+			transition: 0.6s;
+			background-color: transparent;
+			padding: 0%;
+
+
+		}
+		#menu li{
+			display: inline-block;
+			margin-left: 8%;
+
+		}
+		.list li button:hover{
+			font-size: 141%;
+			background-color: #fff;
+			transition: 0.9s;
+			width: 6%;
+			height: 4%;
+			color: #000;
+			border-radius: 6%;
+
+
+		}
+
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="kaleemcss.css">
+
+</head>
+<body>
+	
+	<div id="menu">
+		<ul class="list">
+			<li class="active"><button onclick="Home()">Home</button></li>
+			<li><button onclick="About()">About</button></li>
+			<li><button onclick="Skills()">Skills</button></li>
+			<li><button onclick="Contact()">Contact</button></li>
+		</ul>
+
+	</div>
+	<div>
+		<br><br><br>
+		<p id="p">Hi,</p>
+		<p id="d">I am <span>Kaleem</span></p>
+		<p id="c">Web Developer</p>
+		
+		
+	</div>
+	<div>
+		<ul class="bt">
+			<li><button class="bb" onclick="Contact()">Contact</button></li>
+		</ul>
+		<br>
+		<!--icons-->
+		<div class="icons">
+			<a href="https://www.facebook.com/abdul.kaleem.395891" target="_blank"><img src="fb.jpeg"></a>
+			<a href="https://www.instagram.com/abdulkaleem254/" target="_blank"><img src="insta.png"></a>
+			<a href="https://www.linkedin.com/in/abdul-kaleem-1931321a8" target="_blank"><img src="inn.jpeg"></a>
+			<a href="abdulkaleem254@gmail.com" target="_blank"><img src="em.jpeg"></a>
+		</div>
+		<div>
+			
+		</div>
+
+	</div>
+	<div class="imgg">
+		<img src="klm.jpg" alt="no image">
+		<br><br><br><br><br><br><br>
+	</div>
+	<br><br><br>
+	<div class="container">
+		<div class="about"><br>
+		<center><u><h3>About</h3></u></center>
+		<img src="abt.jpg">
+		<p >I am Shaik Kaleem From Andhra Pradesh,INDIA.
+		A Passionate and an inspiring fresher with highly self driven and full zeal.
+	I am passionte about learning new technologies,and always willing to work on new technologies and innovate new things which can improve existing technology.I am a Quick learner and believe in learning from my past mistakes.This is a virtue as it can take me ahead in both my professional and personal life.</p><br><br><br><br><br><br>
+		</div>
+	<!--div id="schl">
+		<div class="ten">
+			<p class="t">I Secured 8.8 CGPA in SSC</p>
+		</div>
+		<div class="inter">
+			<p class="i">I Secured 88.2% CGPA in Intermediate</p>
+		</div>
+		<div class="eng">
+			<p class="e">I Secured 7.0 CGPA </p>
+		</div>
+
+	</div-->
+</div>
+	<div class="skill">
+		<center><u><h3>Skills</h3></u></center>
+	<div class="box">
+		<div class="clb">
+			<label><p>C Language</p>
+			<meter low="50" high="80" max="100" value="75">75</meter><span>75%</span>
+			</label>
+		</div>
+		<div class="html">
+			<label><p>HTML</p>
+			<meter low="50" high="80" max="100" value="80">80</meter><span>80%</span>
+			</label>
+			<br>
+		</div>
+		<div class="css">	
+			<label><p>CSS</p>
+			<meter low="50" high="80" max="100" value="70">70</meter><span>70%</span>
+			</label>
+		</div>
+		<div class="pyt">
+			<label><p>PYTHON</p>
+			<meter low="50" high="80" max="100" value="50">50</meter><span>50%</span>
+			</label>
+		</div>
+		<div class="j">
+			<label><p>JAVASCRIPT</p>
+			<meter low="50" high="80" max="100" value="30">30</meter><span>30%</span>
+			</label>
+		</div>
+		
+	</div>
+
+</div>
+	<script type="text/javascript">
+		var submitted=false;
+		function Home() {
+  		window.scrollTo(0,0);
+ 		}
+		function About() {
+  		window.scrollTo(800,900);
+ 		}
+ 		function Skills() {
+  		window.scrollTo(800,1700);
+ 		}
+ 		function Contact() {
+  		window.scrollTo(0,4000);
+ 		}
+		
+		</script>
+		<!--<iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if (submitted) {window.location='file:///E:/comparative%20religion/uirc/kaleem.html';}"></iframe><-->
+<div class="con">
+	<div>
+		<center><u><h3>Contact</h3></u></center>
+		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSew6r1pavfyRTRkr5oQblzowH9c9HBGyhkK0UDvwSV4e5HRDQ/formResponse" method="post" target="'file:///E:/comparative%20religion/uirc/kaleem.html'" onsubmit="submitted=true"s class="form">
+			<input type="text" name="entry.150544439" placeholder="Enter your Name" required=""><br>
+			<input type="email" name="entry.519229233" placeholder="Enter your Email" required=""><br>
+			<input type="textarea" name="entry.899228096" placeholder="Enter your message" required="" id="txt"><br>
+			<a href="'file:///E:/comparative%20religion/uirc/kaleem.html'"><button name="submitted" type="submit" class="sub">submit</button></a>
+			<br><br><br><br><br><br><br>
+		</form>
+		
+
+	</div>
+</div>	
+
+	
+	
+
+</body>
+</html>

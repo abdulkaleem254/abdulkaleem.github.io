@@ -1,0 +1,204 @@
+
+.container{
+	margin: 0%;
+	background-color: #82cafa;
+	width: 100%;
+	
+
+}
+.about {
+	margin-top: 8%;
+
+	color: #000;
+	font-family: sans-serif;
+	font-size: 200%;
+	text-align: center;
+	transition: 0.9s;
+
+}
+
+.about img{
+	width: 20%;
+	height: 30%;
+	margin-top: 8%;
+	margin-left: -70%;
+	border: 20px solid #82cafa;
+	border-radius: 100%;
+	transition-duration: 1s;
+}
+.about img:hover{
+
+	border: 2px solid #081072f5;
+	width: 22%;
+	height: 23%;
+	border-radius: 100%;
+	transition-duration: 0.8s;
+}
+.about p{
+	margin-top: -20%;
+	margin-left: 27%;
+	transition: 0.9s;
+}
+/******schoolong******/
+/*#schl{
+	margin-left: 150px;
+	display: inline-block;
+	border: 2px solid white;
+	width: 80%;
+	height: 250px;
+	border-radius: 70px;
+	text-align: center;
+	display: inline-flex;
+	padding: 10px;
+	font-size: 28px;
+	text-align: center;
+	background-color: #000;
+	transition: 0.9s;
+}
+#schl:hover{
+	background-color: #fff;
+	transition: 0.9s;
+
+}
+.t:hover,.i:hover,.e:hover
+{
+	background-color: #000;
+	transition: 0.9s;	
+	color: #fff;
+}
+#schl{
+	margin-top: -100px;
+	display: inline-flex;
+	margin-left: 110px;
+	padding: 50px;
+	font-size: 25px;
+}
+#schl p{
+	align-items: center;
+}
+.t,.i,.e{
+	display: inline-flex;
+	border: 1px solid white;
+	height: 150px;
+	width: 350px;
+	border-radius: 30px;
+	text-align: center;
+	padding: 5px;
+	margin-top: 43px;
+	margin-left: 30px;
+	background-color: #fff;
+	color: #000;
+	transition: 0.9s;
+
+}*/
+
+
+
+
+/**skills**/
+.skill{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 250%;
+}
+
+.skill .box{
+	margin-top: -2%;
+	margin-left: 15%;
+	/*padding: 0%;*/
+	font-size: 50%;
+}
+meter{
+	width: 80%;
+	height: 20%;
+	color: #fff;
+	transition: 0.9s;
+}
+
+.html,.c,.j,.clb,.pyt,.css{
+	margin-top: 1%;
+	margin-left: 18%;
+	text-align: center;
+	border: 1px solid white;
+	background-color: #000;
+	color: #fff;
+	width: 50%;
+	height: 100px;
+	border-radius: 20px;
+	transition: 0.9s;
+}
+.css:hover,.html:hover,.j:hover,.clb:hover,.pyt:hover{
+	transition: 0.9s;
+	background-color: #000efefe;
+	background-color: #fff;
+	color: #000;
+	border-radius: 90px;
+
+}
+
+
+.form{
+	text-align: center;
+	text-decoration: none;
+
+}
+input{
+	text-decoration: none;
+	border: none;
+	font-size: 120%;
+	margin-top: 2%;
+	margin-bottom:35px;
+	background: transparent;
+	transition: 0.6s;
+	width: 280px;
+	outline: none;
+	border-bottom: 1px solid white;
+	padding: 5px;
+	color: white;
+}
+.con h3{
+	font-size: 250%;
+	margin-top: 20%;
+}
+.sub{
+	margin-left: 0%;
+	font-size: 120%;
+	background-color: #fff;
+	color: #000;
+	border-radius: 10%;
+	transition: 0.6s;
+
+}
+.sub:hover{
+	font-size: 130%;
+	transition: 0.6s;
+}
+#txt{
+	border-top: 1px solid white;
+	height: 120px;
+}
+input:hover{
+	font-size: 140%;
+	transition: 0.6s;
+}
+.icons img{
+	width: 2%;
+	height: 3%;
+	margin-top: 2%;
+	margin-left: 10%;
+	border: 0px solid #000;
+	border-radius: 100%;
+	transition: 0.5s;
+	padding: 5px;
+	margin-right: -9%;
+}
+.icons img:hover{
+	width: 2.2%;
+	height: 2%;
+	transition: 0.5s;
+}
+
+
+
+
+
