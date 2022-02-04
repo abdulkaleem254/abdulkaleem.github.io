@@ -1,0 +1,58 @@
+services:
+
+sendmsg=new BehaviorSubject<any>([])// one storing variable;
+constructor(){}
+//communicatemethod
+communicate(para){
+this.sendmsg.next(para);
+}
+//sending component1..
+you need to add a service as a dependency in a constructor of sending component;
+constructor(private var:serviceName){}
+ngOnInit(){
+this.var.communicate(this.msg);}
+
+//receiving component2
+constructor(private:serviceName){}
+ngOnInit(){
+this.var.sendmsg.subscribe(msg)=>{
+console.log(msg);
+}
+
+
+
+//for using apis in angular
+import httpclientmodule in app.module.ts;
+then create a servie by any name like api.service
+in api service:
+
+export class ApisService {
+
+  constructor(private http:HttpClient) { }
+  getP(){
+    return this.http.get<any>("https://fakestoreapi.com/products")
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+}
+
+After this go to shop component
+call getP() Metod and store data in a local variable
+
+export class ShoppingComponent implements OnInit {
+  public List:any;
+  constructor(private api:ApisService) { }
+
+  ngOnInit(): void {
+    this.api.getP().subscribe(
+      res=>{
+        this.List=res;
+      }
+    )
+  }
+
+}
+
+
+By using interpolation use any where in html
