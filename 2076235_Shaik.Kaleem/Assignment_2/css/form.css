@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* for eligibility check */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* step 1 box */
+div{
+    width: 70%;
+    margin: auto;
+    height: 300px;
+    text-align: center;
+}
+h1,.sub-head,h2{
+    text-transform: uppercase;
+    color: rgba(3, 53, 144, 0.849);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 15px 0;
+}
+p{
+    color: rgba(3, 53, 144, 0.849);
+
+    margin-bottom: 5%;
+}
+header>div>form>input{
+    margin: 5px;
+    
+}
+header>div>form>label{
+    margin-right: 10px;
+}
+header>div>form>input[type=button],#btn{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    padding: 8px 60px;
+    background-color: rgba(3, 53, 144, 0.849);
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+}
+header>div>form>input[type=button]:hover,#btn:hover{
+    background-color: rgb(0, 136, 72);
+    transition: 0.2s;
+    cursor: pointer;
+}
+/* after submitting eligibility check */
+#srypara,#btn{
+    display: none;
+}
+/* registration form STEP 2 */
+.step2{
+    border-top: 3px solid rgba(4, 114, 187, 0.849);
+    height: 800px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.step2>h2{
+    font-size: 30px;
+}
+.step2>div>form{
+    /* border: 1px solid black; */
+    height: 800px;
+}
+.form-div{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.form-div>p{
+    text-align: left;
+    margin-bottom: 10px;
+}
+/* 2 input field label style */
+.form-div>input{
+    width: 48%;
+    margin:20px 5px;
+    height: 35px; 
+    padding: 0 10px;
+    font-size: 15px;
+    border: 3px solid rgba(3, 53, 144, 0.849);;
+}
+.form-div>label{
+    position: absolute;
+    text-transform: uppercase;
+    color: rgba(3, 53, 144, 0.849);
+    padding: 0px 15px;
+    pointer-events: none;
+    left: 0px;
+    font-size: 16px;
+    line-height: 70px;
+}
+.LName{
+    right: -140px;
+}
+/* 1 input field label style */
+#address{
+    width: 98%;
+}
+/* 3 input field label style */
+
+.opt>input{
+    width: 31%;
+}
+.opt>select{
+    margin:0 5px;
+    width: 31%;
+    height: 35px;
+    font-size: 18px;
+}
+.opt>label{
+    left: 0px;
+}
+.opt>.zip{
+    right: -20em;
+}
+.opt>.state{
+    right: 130px;
+}
+/* 2 input field style */
+.form-div>.Email{
+    right: -5.5em;
+}
+.form-div>input,select{
+    border: 2px solid rgba(4, 114, 187, 0.849);
+    outline: none;
+}
+.form-div>label{
+    transform-origin: 0 0;
+}
+/* labels */
+.form-div>input:focus + label,.form-div>select:focus + label,
+.form-div>input:not(:placeholder-shown) + label
+{ 
+    transform: translateY(-25px);
+    transition: 0.5s;
+    
+}
+select{
+    font-size: 20px;
+}
+select>option{
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(4, 114, 187, 0.849);
+}
+.form-div>input::placeholder{
+    color: transparent;
+}
+
+/* checkbox style */ 
+.chkbox{
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.frst{
+    margin-left: -3px;
+}
+.chkbox>input{
+    width: 18px;
+    height: 18px;
+}
+.chkbox>label>span{
+    font-size: 18px;
+    color: rgba(3, 53, 144, 0.849);
+}
+.chkbox>label>span>a{
+    color: rgba(3, 53, 144, 0.849);
+}
+.chkbox>h3{
+    font-size: 25px;
+    font-family: cursive;
+    color: rgba(3, 53, 144, 0.849);
+    margin: 10px 0 ;
+}
+/* form radio buttons */
+.rdbox{
+    margin: 30px 0;
+    height: 30px;
+    text-align: left;
+}
+.rdbox>input{
+    width: 30px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.rdbox>label{
+    font-size: 20px;
+    color: rgba(3, 53, 144, 0.849);
+    width: 100%;
+}
+/* button styles */
+#frmsub{
+    margin-top: 10%;
+    padding: 10px 60px;
+    background-color: rgba(3, 53, 144, 0.849);
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+    border: none;
+}
+#frmsub:hover{
+    background-color: rgb(0, 136, 72);
+    transition: 0.2s;
+    cursor: pointer;
+}
+/* error messages style */
+.err{
+    display: flex;
+    height: 20px;
+    width: 100%;
+    margin-top: -10px;
+    padding: 0 0 0 10px;
+}
+.err>i{color: red;}
+.err>p{color: red;}
+.err>.msg1{
+    margin-right: 20%;
+}
+.msg3{
+    margin: 0px 10%;
+    margin-right: 8%;
+}
+.msg4{
+    margin-right: 22%;
+}
+/* error messages end */
+
+#registration{
+    display: none;
+}
+.err{
+    visibility: hidden;
+}
+
+/* state */
+.state1{
+    visibility: hidden;
+}
+/* custom */
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    outline: none;
+    border: 3px solid #0176ac;
+    margin: 10px 10px;
+}
+input[type='radio']:before {
+    content: '';
+ width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(0.75);
+    display: inline-flex;
+}
+input[type="radio"]:checked:before {
+    background: #0176ac;
+}
+input[type="radio"]:checked {
+  border-color:#0176ac;
+}
+input[type='radio']:after {
+    margin: 1px;
+}
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border: 3px solid #0176ac;    
+    margin: 10px 10px;
+}
+input[type='checkbox']:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0.75);
+    display: inline-flex;
+}
+input[type="checkbox"]:checked:before {
+    background: #0176ac;
+}
+input[type="checkbox"]:checked {
+  border-color:#0176ac;
+}

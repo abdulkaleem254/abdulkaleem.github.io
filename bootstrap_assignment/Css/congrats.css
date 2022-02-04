@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(3, 53, 144, 0.849);
+    color: white;
+}.container>div{
+    width: 70%;
+    height: 50%;
+}
+p{
+    margin: 20px 0;
+    text-align: center;
+}
+a{
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.container>div>.head{
+    margin-top: auto;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

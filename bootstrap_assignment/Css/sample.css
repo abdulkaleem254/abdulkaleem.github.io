@@ -1,0 +1,65 @@
+body{
+    max-width: 100%;
+}
+nav{
+    background-color: #e72650; 
+}
+a{
+    color: white !important;
+}
+li{
+    margin-left: 15px;
+}
+li:hover{
+    font-weight: 600;
+}
+.banner{
+    height: 620px;
+    max-width: 100%;
+    background-image: url(../Assets/banner2.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.hv:hover{
+    background-color: transparent !important;
+    border: 1px solid white;
+    color: white !important;
+    font-weight: 700;
+}
+/* what we doo */
+.para{
+    color: #626262;
+    font-size: 18px;
+}
+.card>i{
+    font-size: 40px;
+    color: #267ae7;
+}
+.image{
+    width: 280px;
+    height: 250px;
+}
+.image>img{
+    width: 100%;
+    height: 100%;
+}
+/* count machine */
+.hero{
+    background-image: url(../Assets/banner2.jfif);
+}
+.centerr{
+    margin: auto 0;
+    margin-top: 50px;
+}
+.hero i{
+    font-size: 50px;
+    margin-right: 10px;
+}
+.itext{
+    font-size: 30px;
+}
+.ibelowtext{
+    font-size: 22px;
+    margin-left: 80px;
+}

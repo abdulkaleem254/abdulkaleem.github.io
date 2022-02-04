@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>step 1</h1>
+            <h2 class="sub-head">Check for Your Eligibility</h2>
+            <p id="para">Are you enrolled any of the program already like VIP access,
+                paid internship etc..?
+            </p>
+            <p id="srypara">Sorry,you are not eligible for
+                the Offer Card,People who are enrolled Programs like VIP
+                access,<br>Paid membership are not eligible for the offer card
+                programs.please see <a href="https://www.google.com/" target="_blank"><b>Google</b> </a> for details.
+            </p>
+            <button id="btn"><i class="fas fa-arrow-left"></i>&nbspBACK</button>
+            <form action="" id="radform" method="get">
+                <input type="radio" id="yes" name="rad"><label for="yes">YES</label>
+                <input type="radio" id="no" name="rad"><label for="no">NO</label>
+                <input type="button" value="submit" id="radsub">
+            </form>
+        </div>
+    </header>
+    <section id="registration">
+        <div class="step2">
+            <h2>STEP 2</h2>
+            <h3 class="sub-head">Enter your contact information</h3>
+            <div>
+                <form action="./congrats.html" method="post" id="regform">
+                    <div class="form-div">
+                        <p>*Required Information</p>
+                        <input type="text" id="fname" placeholder=" " name="First Name">
+                        <label for="fname" class="FName">First Name*</label>
+
+                        <input type="text" id="lname" placeholder=" " name="Last Name">
+                        <label for="lname" class="LName">Last Name*</label>
+
+                        <div class="err">
+                            <p class="msg1" id="e1"><i class="fas fa-exclamation-circle"></i>Please Enter Your  First Name</p>
+                            <p id="e2"><i class="fas fa-exclamation-circle"></i>Please Enter Your  Last Name</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-div">
+                        <input type="text" id="address" placeholder=" " name="address">
+                        <label for="address">address*</label>
+
+                        <div class="err">
+                            <p id="e3"><i class="fas fa-exclamation-circle"></i>Please Enter Your  Address</p>
+                        </div>
+                    </div>
+
+                    <div class="form-div opt">
+                        <input type="text" id="city" placeholder=" " name="City">
+                        <label for="city">City*</label>
+
+                        <select id="state" name="State" onclick="sn()">
+                            <option value="" ></option>
+                            <option value="1">AndhraPradesh</option>
+                            <option value="2">Tamilnadu</option>
+                            <option value="3">Telangana</option>
+                            <option value="4">Karnataka</option>
+                            <option value="5">Kerala</option>
+                        </select>
+                        
+
+
+                        <label for="State" id="sto" class="state">State*</label>
+
+                        <input type="text" id="zipcode" placeholder=" " name="zipcode" 
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/ maxlength="6">
+                        <label for="zipcode" class="zip">Zipcode*</label>
+
+                        <div class="err">
+                            <p class="msg2" id="e4"><i class="fas fa-exclamation-circle"></i>Please Enter Your  City</p>
+                            <p class="msg3 state1" id="e5"><i class="fas fa-exclamation-circle"></i>Please Enter Your State</p>
+                            <p id="e6"><i class="fas fa-exclamation-circle"></i>Please Enter Your Zipcode</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-div">
+
+                        <input type="text" id="phn" placeholder=" " name="Phn Number"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="10">
+                        <label for="phn">Mobile number*</label>
+
+                        <input type="Email" id="email" placeholder=" " name="Email">
+                        <label for="email" class="Email">Email*</label>
+
+                        <div class="err">
+                            <p class="msg4" id="e7"><i class="fas fa-exclamation-circle"></i>Please Enter Your Number</p>
+                            <p class="msg1" id="e8"><i class="fas fa-exclamation-circle"></i>Please Enter Your Email</p>
+                        </div>
+
+                    </div>
+                    <div class="chkbox frst">
+                        <input type="checkbox" id="chck" name="checkbox">
+                        <label for="chck">
+                            <span>Yes,Iwould like to receive updates to registered mobile number.
+                                 trustworthyonly will it make your business.Read our
+                                <a href="https://www.google.com/" target="_blank"><b>Terms & Conditions</b></a>.</span>
+                        </label>
+                    </div>
+                    <div class="chkbox">
+                        <input type="checkbox" id="chk" name="checkbox2">
+                        <label for="chk"><span>Yes,Iwould like to receive updates to registered mobile number.while you
+                                do not legally need a Terms and Conditions agreement.</span></label>
+                        <h3>My tears,my reward's saving card delivery options</h3>
+                    </div>
+                    <div class="rdbox">
+                        <input type="radio" name="rad" id="rdo">
+                        <label for="rdo">Print your saving's card now.</label><br>
+                        <input type="radio" name="rad" id="rod">
+                        <label for="rod">Receive your saving's card via text message.</label>
+
+                    </div>
+                    <input type="submit" name="submit" id="frmsub" value="submit">
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <script src="./script/form.js"></script>
+</body>
+
+</html>
